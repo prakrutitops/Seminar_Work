@@ -45,12 +45,12 @@ public class MyAdapter extends BaseAdapter
         TextView txt1=view.findViewById(R.id.txt1);
         TextView txt2=view.findViewById(R.id.txt2);
         TextView txt3=view.findViewById(R.id.txt3);
-        TextView txt4=view.findViewById(R.id.txt4);
 
-        txt1.setText(list.get(i).name);
-        txt2.setText(list.get(i).surname);
-        txt3.setText(list.get(i).email);
-        txt4.setText(list.get(i).password);
+
+        txt1.setText(list.get(i).pname);
+        txt2.setText(list.get(i).pprice);
+        txt3.setText(list.get(i).pdes);
+
 
 
         return view;

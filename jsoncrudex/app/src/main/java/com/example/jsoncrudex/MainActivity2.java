@@ -58,17 +58,17 @@ public class MainActivity2 extends AppCompatActivity
                         JSONObject jsonObject=jsonArray.getJSONObject(i);
 
                         int id=jsonObject.getInt("id");
-                        String name=jsonObject.getString("Name");
-                        String surname= jsonObject.getString("Surname");
-                        String email= jsonObject.getString("Email");
-                        String pass= jsonObject.getString("Password");
+                        String pname=jsonObject.getString("pname");
+                        String pprice= jsonObject.getString("pprice");
+                        String pdes= jsonObject.getString("pdes");
+
 
                         Model m =new Model();
                         m.setId(id);
-                        m.setName(name);
-                        m.setSurname(surname);
-                        m.setEmail(email);
-                        m.setPassword(pass);
+                        m.setPname(pname);
+                        m.setPprice(pprice);
+                        m.setPdes(pdes);
+
                         list.add(m);
                     }
 
@@ -124,10 +124,10 @@ public class MainActivity2 extends AppCompatActivity
 
                 Intent i =new Intent(MainActivity2.this,UpdateActivity.class);
                 i.putExtra("myid",Id2);
-                i.putExtra("myname",mode1.getName());
-                i.putExtra("mysurname",mode1.getSurname());
-                i.putExtra("myemail",mode1.getEmail());
-                i.putExtra("mypass",mode1.getPassword());
+                i.putExtra("myname",mode1.pname);
+                i.putExtra("mysurname",mode1.pprice);
+                i.putExtra("myemail",mode1.pdes);
+
 
                 startActivity(i);
 

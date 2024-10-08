@@ -18,12 +18,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25dp"
-        android:hint="Name"/>
+        android:hint="Product Name"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Surname"
+        android:hint="Product Price"
         android:textSize="25dp"
         android:id="@+id/edt2"/>
 
@@ -31,17 +31,9 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
+        android:hint="Product Description"
         android:textSize="25dp"
         android:id="@+id/edt3"/>
-
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:textSize="25dp"
-        android:id="@+id/edt4"/>
 
     <Button
         android:layout_marginTop="20dp"

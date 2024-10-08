@@ -19,12 +19,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25dp"
-        android:hint="Name"/>
+        android:hint="pname"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Surname"
+        android:hint="pprice"
         android:textSize="25dp"
         android:id="@+id/edt2"/>
 
@@ -32,17 +32,11 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
+        android:hint="pdes"
         android:textSize="25dp"
         android:id="@+id/edt3"/>
 
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:textSize="25dp"
-        android:id="@+id/edt4"/>
 
     <Button
         android:layout_marginTop="20dp"

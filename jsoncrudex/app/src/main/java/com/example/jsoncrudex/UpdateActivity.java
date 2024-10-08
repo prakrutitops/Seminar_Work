@@ -23,7 +23,7 @@ import java.util.Map;
 
 public class UpdateActivity extends AppCompatActivity {
 
-    EditText edt1,edt2,edt3,edt4;
+    EditText edt1,edt2,edt3;
     Button btn1;
 
     @Override
@@ -35,7 +35,7 @@ public class UpdateActivity extends AppCompatActivity {
         edt1=findViewById(R.id.edt1);
         edt2=findViewById(R.id.edt2);
         edt3=findViewById(R.id.edt3);
-        edt4=findViewById(R.id.edt4);
+
         btn1=findViewById(R.id.btn1);
 
 
@@ -44,7 +44,7 @@ public class UpdateActivity extends AppCompatActivity {
         edt1.setText(i.getStringExtra("myname"));
         edt2.setText(i.getStringExtra("mysurname"));
         edt3.setText(i.getStringExtra("myemail"));
-        edt4.setText(i.getStringExtra("mypass"));
+
         Toast.makeText(UpdateActivity.this, ""+id, Toast.LENGTH_SHORT).show();
 
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -55,7 +55,7 @@ public class UpdateActivity extends AppCompatActivity {
                 String name=edt1.getText().toString();
                 String surname=edt2.getText().toString();
                 String email=edt3.getText().toString();
-                String password=edt4.getText().toString();
+
 
                 StringRequest stringRequest=new StringRequest(Request.Method.POST, "https://prakrutitech.buzz/SeminarAPI/update.php", new Response.Listener<String>() {
                     @Override
@@ -81,10 +81,10 @@ public class UpdateActivity extends AppCompatActivity {
                     {
                         HashMap map=new HashMap();
                         map.put("id",id);
-                        map.put("Name",name);
-                        map.put("Surname",surname);
-                        map.put("Email",email);
-                        map.put("Password",password);
+                        map.put("pname",name);
+                        map.put("pprice",surname);
+                        map.put("pdes",email);
+
                         return map;
                     }
                 };
